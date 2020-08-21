@@ -11,13 +11,16 @@ def scope_test():
     var1= "testing"
     do_local()
     print ("after local assignment: ",var1)
+#will print testing overriding local variable defined above"
 
     scope_nonlocal()
     print ("after non local assignment: ",var1)
-
+# will print "nonlocalvariable" variable non local variables don't change values inside functions
     scope_global()
     print ("after global assignment: ",var1)
+# will print "nonlocalvariable" variable non local variables don't change values inside functions
 
 scope_test()
 print ("In global scope:" , var1)
 
+# will print ""globallydefinedvariable" variable non local variables don't change values inside functions
